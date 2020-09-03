@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: sans-serif;
 }
 
 header {
@@ -26,15 +27,47 @@ header {
   align-items: center;
 }
 
+.flex-justify-space-between {
+    justify-content: space-between;
+  }
+
 .cpointer {
   cursor: pointer;
+}
+
+.txtc {
+    text-align: center;
 }
 
 .overflow-ellipsis {
     text-overflow: ellipsis;
   }
 
+.grey-color {
+    color: hsla(0,0%,100%,.6);
+}
+
 /* DEFINED CLASSES */
+
+.header-top-bar {
+    background-color: #000;
+    width: 100%;
+    height: 32px;
+    font-size: 0.8em;
+  }
+
+.topb-li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.topb-li-a {
+    text-decoration: none;
+}
+
+.topb-li-a:hover {
+    color: #fff;
+}
 
 .logo {
   height: 48px;
@@ -47,24 +80,51 @@ header {
   width: 66px;
 }
 
+.main-navigation {
+    margin-right: auto;
+}
+
+.main-nav-ul {
+    
+}
+
+.main-nav-li {
+    display: inline-block;
+    margin-right: 1.2em;
+}
+
+.main-nav-a {
+    color: #bbb;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.main-nav-a:hover {
+    color: #000;
+}
+
 .header-nav-icons {
-  background-color: aqua;
+  
 }
 
 .search-icon {
   color: #ccc;
   padding: 10px;
-  border-left: 1px solid #ccc;
+  border-left: 1px solid #dadada;
 }
 
 .hamb-icon {
   color: #f42;
   padding: 10px;
+  border-left: 1px solid #dadada;
 }
 
 .yellow-news {
+  height: 30px;
   width: 100%;
-    background-color: #fd3;
+  background-color: #fd3;
+  padding: 0 10px;
+  font-size: 0.9em;
 }
 
 .main-article-logo {
@@ -76,14 +136,24 @@ header {
     margin-top: 20px;
 }
 
+.main-articles-container {
+    height: 880px;
+    width: 95%;
+    grid-template: 
+    "main-article-1 main-article-2"
+    "main-article-1 main-article-3";
+}
+
 .main-article-1 {
-    background: linear-gradient(transparent, rgb(0, 0, 0)), url("/img/pic1.png"),
+    background-image:
     linear-gradient(
         337deg,
         rgba(116, 116, 116, 0) 33%,
         rgba(255, 0, 0, 0.4158614129245448) 56%,
         rgba(255, 93, 93, 0.530707351299895) 84%
-      );
+      ),
+      linear-gradient(transparent, rgb(0, 0, 0)), url("/img/pic1.png"),
+      url("../img/pic1.png");
 }
 
 /* Styles for Mobile Screen */
@@ -99,6 +169,10 @@ header {
     white-space: nowrap;
   }
 
+  .yellow-news p {
+    margin: auto;
+  }
+
   .main-articles-container {
       columns: 1fr;
   }
@@ -110,9 +184,7 @@ header {
 
 /* Styles for Tablet Screen */
 @media screen and (max-width: 1024px) {
-  .header-top-bar {
-    display: none;
-  }
+
 }
 
 /* Styles for Mobile Screen */
