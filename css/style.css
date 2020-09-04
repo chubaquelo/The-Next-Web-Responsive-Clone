@@ -190,10 +190,10 @@ header {
 .main-article-1 {
   background-image:
     linear-gradient(
-    337deg,
-    rgba(116, 116, 116, 0) 33%,
-    rgba(255, 0, 0, 0.4158614129245448) 56%,
-    rgba(255, 93, 93, 0.530707351299895) 84%
+      337deg,
+      rgba(116, 116, 116, 0) 33%,
+      rgba(255, 0, 0, 0.4158614129245448) 56%,
+      rgba(255, 93, 93, 0.530707351299895) 84%
     ),
     linear-gradient(transparent, rgb(0, 0, 0)),
     url("../img/pic1.png");
@@ -201,15 +201,22 @@ header {
 }
 
 .main-article-2 {
-  background-image: linear-gradient(transparent, 
-  rgb(0, 0, 0)),
-    url("../img/boris-chair-gq-796x417.png");
+  background-image:
+  linear-gradient(
+      transparent, 
+      rgb(0, 0, 0)),
+      url("../img/boris-chair-gq-796x417.png"
+      );
 }
 
 .main-article-3 {
-  background-image: linear-gradient(transparent, 
-  rgb(0, 0, 0)),
-    url("../img/violet.jpg");
+  background-image:
+  linear-gradient(
+      transparent,
+      rgb(0, 0, 0)
+      ),
+      url("../img/violet.jpg"
+      );
 }
 
 /* Latest news section styles */
@@ -321,9 +328,12 @@ header {
   max-width: 338px;
   max-height: 276px;
   align-items: flex-start;
-  background: linear-gradient(transparent, 
-    rgb(0, 0, 0)),
-    url(../img/by-cat-article.jpg);
+  background:
+  linear-gradient(
+      transparent, 
+      rgb(0, 0, 0)),
+      url(../img/by-cat-article.jpg
+      );
   padding: 150px 15px 5px 15px;
 }
 
@@ -595,13 +605,14 @@ footer {
   .articles-by-category-container {
     grid-template-columns: 1fr;
   }
-  
+
   .last-deals-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 /* END of Tablet Screen Style */
+
 /* DESKTOP - Styles for Desktop Screen */
 
 @media (min-width: 1024px) {
