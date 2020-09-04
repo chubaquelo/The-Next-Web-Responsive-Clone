@@ -149,7 +149,7 @@ header {
 }
 
 .main-articles-container {
-  margin: 5px 10px;
+  margin: 5px 30px;
   height: 475px;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 2fr 1fr;
@@ -199,6 +199,49 @@ header {
 .main-article-3 {
   background-image: linear-gradient(transparent, rgb(0, 0, 0)),
     url("../img/violet.jpg");
+}
+
+/* Latest news section styles */
+
+.latest-news-container {
+  margin: 30px 64px;
+  padding: 0 20px;
+}
+
+.latest-news-news {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.latest-news-date {
+  font-size: 12px;
+  color: #a0a0a0;
+}
+
+.latest-news-news article h4 {
+  letter-spacing: 0.5px;
+  margin: 5px 0;
+}
+
+.latest-news-news article h4:hover {
+  color: #f42;
+}
+
+.latest-news-title {
+  color: #f42;
+  margin: 20px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.latest-news-title:hover {
+  color: #000;
+}
+
+.news-img {
+  width: 270px;
+  height: 135px;
+  object-fit: cover;
 }
 
 /* Styles for Mobile Screen */
@@ -302,6 +345,16 @@ header {
     color: #fff;
     font-size: 1.4em;
     margin: 0;
+  }
+
+  .latest-news-container {
+    margin: auto auto;
+    padding: 0 20px;
+  }
+
+  .latest-news-news {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
   }
 }
 
