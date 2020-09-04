@@ -5,44 +5,79 @@
     <meta name="viewport" content="initial-scale=1.0" />
     <title>The Next Web - Responsive Clone Project</title>
     <link rel="stylesheet" href="../css/style.css" />
-    <script defer src="https://friconix.com/cdn/friconix.js"> </script>
+    <script defer src="https://friconix.com/cdn/friconix.js"></script>
   </head>
   <body>
-      <!-- Here begins the header part: A header top bar (black), and 3 columns div for real header-->
-    <div class="header-top-bar d-flex flex-justify-space-between flex-align-center">
-      <nav class="header-top-left-nav">
-          <ul>
-              <li class="topb-li"><a class="grey-color topb-li-a" href="#">News</a></li>
-              <li class="topb-li"><a class="grey-color topb-li-a d-flex flex-align-center" href="#">Events <i class="fi-xwsdxl-caret-solid"></i></a></li>
-              <li class="topb-li"><a class="grey-color topb-li-a d-flex flex-align-center" href="#">Business <i class="fi-xwsdxl-caret-solid"></i></a></li>
-              <li class="topb-li"><a class="grey-color topb-li-a" href="#">AMA's</a></li>
-              <li class="topb-li"><a class="grey-color topb-li-a" href="#">Spaces</a></li>
-              <li class="topb-li"><a class="grey-color topb-li-a" href="#">Terms & Conditions</a></li>
-          </ul>
-      </nav>
-      <nav class="header-top-right-nav">
-        <ul>
-            <li class="topb-li"><a class="grey-color topb-li-a" href="#">About</a></li>
-            <li class="topb-li"><a class="grey-color topb-li-a" href="#">Adversise</a></li>
-            <li class="topb-li"><a class="grey-color topb-li-a" href="#">Jobs</a></li>
-            <li class="topb-li"><a class="grey-color topb-li-a" href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-    <header class="d-flex">
+    <!-- Here begins the header part: A header top bar (black), and 3 columns div for real header-->
+
+    <header class="d-flex flex-wrap">
       <div class="logo d-flex flex-center-all">
         <img class="logo-img" src="../img/tnw.svg" alt="Logo" />
       </div>
-      <nav class="main-navigation">
-          <ul class="main-nav-ul">
-              <li class="main-nav-li"><a class="main-nav-a grey-color" href="#">LATEST</a></li>
-              <li class="main-nav-li"><a class="main-nav-a" href="#">HARD FORK</a></li>
-              <li class="main-nav-li"><a class="main-nav-a" href="#">PLUGGED</a></li>
-              <li class="main-nav-li"><a class="main-nav-a" href="#">README</a></li>
-              <li class="main-nav-li"><a class="main-nav-a" href="#">GROWTH QUARTERS</a></li>
-              <li class="main-nav-li"><a class="main-nav-a" href="#">SHIFT</a></li>
-              <li class="main-nav-li"><a class="main-nav-a" href="#">NEURAL</a></li>
+      <div
+        class="header-top-bar d-flex flex-justify-space-between flex-align-center"
+      >
+        <nav class="header-top-left-nav">
+          <ul>
+            <li class="topb-li">
+              <a class="grey-color topb-li-a" href="#">News</a>
+            </li>
+            <li class="topb-li">
+              <a class="grey-color topb-li-a d-flex flex-align-center" href="#"
+                >Events <i class="fi-xwsdxl-caret-solid"></i
+              ></a>
+            </li>
+            <li class="topb-li">
+              <a class="grey-color topb-li-a d-flex flex-align-center" href="#"
+                >Business <i class="fi-xwsdxl-caret-solid"></i
+              ></a>
+            </li>
+            <li class="topb-li">
+              <a class="grey-color topb-li-a" href="#">AMA's</a>
+            </li>
+            <li class="topb-li">
+              <a class="grey-color topb-li-a" href="#">Spaces</a>
+            </li>
+            <li class="topb-li">
+              <a class="grey-color topb-li-a" href="#">Terms & Conditions</a>
+            </li>
           </ul>
+        </nav>
+        <nav class="header-top-right-nav">
+          <ul>
+            <li class="topb-li">
+              <a class="grey-color topb-li-a" href="#">About</a>
+            </li>
+            <li class="topb-li">
+              <a class="grey-color topb-li-a" href="#">Adversise</a>
+            </li>
+            <li class="topb-li">
+              <a class="grey-color topb-li-a" href="#">Jobs</a>
+            </li>
+            <li class="topb-li">
+              <a class="grey-color topb-li-a" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <nav class="main-navigation">
+        <ul class="main-nav-ul">
+          <li class="main-nav-li">
+            <a class="main-nav-a grey-color" href="#">LATEST</a>
+          </li>
+          <li class="main-nav-li">
+            <a class="main-nav-a" href="#">HARD FORK</a>
+          </li>
+          <li class="main-nav-li">
+            <a class="main-nav-a" href="#">PLUGGED</a>
+          </li>
+          <li class="main-nav-li"><a class="main-nav-a" href="#">README</a></li>
+          <li class="main-nav-li">
+            <a class="main-nav-a" href="#">GROWTH QUARTERS</a>
+          </li>
+          <li class="main-nav-li"><a class="main-nav-a" href="#">SHIFT</a></li>
+          <li class="main-nav-li"><a class="main-nav-a" href="#">NEURAL</a></li>
+        </ul>
       </nav>
       <div class="header-nav-icons d-flex flex-center-all">
         <i class="fi-xnsuxl-search search-icon"></i>
@@ -50,23 +85,29 @@
       </div>
     </header>
 
+    <!-- Begining of MAIN section-->
     <main>
       <div class="yellow-news d-flex flex-align-center">
-          <p class="txtc">Join TNW2020, or 15th annual flagship event. Online. Get tickets -></p>
+        <p class="txtc">
+          Join TNW2020, or 15th annual flagship event. Online. Get tickets ->
+        </p>
       </div>
       <div class="main-articles-container d-grid">
         <article class="main-article main-article-1">
-            <img class="main-article-logo" src="/img/tnw.svg" alt="TNW">
-            <h1>This AI makes peanut butter and banana sandwiches that are fit for the King</h1>
-            <p>by <a href="#">Thomas Macaulay</a>  58 minutos  6</p>
+          <img class="main-article-logo" src="/img/tnw.svg" alt="TNW" />
+          <h1>
+            This AI makes peanut butter and banana sandwiches that are fit for
+            the King
+          </h1>
+          <p>by <a href="#">Thomas Macaulay</a> 58 minutos 6</p>
         </article>
         <article class="main-article main-article-2">
-            <h1>Why you always need to show your product’s ‘humanness’</h1>
-            <p>by <a href="#">Thomas Macaulay</a>  58 minutos  6</p>
+          <h1>Why you always need to show your product’s ‘humanness’</h1>
+          <p>by <a href="#">Thomas Macaulay</a> 58 minutos 6</p>
         </article>
         <article class="main-article main-article-3">
-            <h1>Join our 15th annual flagship event for free</h1>
-            <p>by <a href="#">Thomas Macaulay</a>  58 minutos  6</p>
+          <h1>Join our 15th annual flagship event for free</h1>
+          <p>by <a href="#">Thomas Macaulay</a> 58 minutos 6</p>
         </article>
       </div>
       <div class="latest-news-container">

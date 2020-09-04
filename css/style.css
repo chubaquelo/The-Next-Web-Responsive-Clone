@@ -11,11 +11,15 @@ header {
 
 /* GLOBAL CLASSES */
 .d-grid {
-    display: grid;
+  display: grid;
 }
 
 .d-flex {
   display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .flex-center-all {
@@ -28,51 +32,57 @@ header {
 }
 
 .flex-justify-space-between {
-    justify-content: space-between;
-  }
+  justify-content: space-between;
+}
+
+.flex-flow-col {
+  flex-flow: column;
+}
 
 .cpointer {
   cursor: pointer;
 }
 
 .txtc {
-    text-align: center;
+  text-align: center;
 }
 
 .overflow-ellipsis {
-    text-overflow: ellipsis;
-  }
+  text-overflow: ellipsis;
+}
 
 .grey-color {
-    color: hsla(0,0%,100%,.6);
+  color: hsla(0, 0%, 100%, 0.6);
 }
 
 /* DEFINED CLASSES */
 
 .header-top-bar {
-    background-color: #000;
-    width: 100%;
-    height: 32px;
-    font-size: 0.8em;
-  }
+  background-color: #000;
+  width: 100%;
+  height: 32px;
+  font-size: 0.8em;
+}
 
 .topb-li {
-    display: inline-block;
-    margin-right: 10px;
+  display: inline-block;
+  margin-right: 10px;
 }
 
 .topb-li-a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .topb-li-a:hover {
-    color: #fff;
+  color: #fff;
 }
 
 .logo {
-  height: 48px;
+  height: 80px;
   width: 106px;
   background: linear-gradient(to bottom right, #c09, #f42 85%);
+  position: absolute;
+  left: 0;
 }
 
 .logo-img {
@@ -80,31 +90,32 @@ header {
   width: 66px;
 }
 
-.main-navigation {
-    margin-right: auto;
+.header-top-left-nav ul {
+  padding-inline-start: 16px;
 }
 
 .main-nav-ul {
-    
+  padding: 0 15px;
+  margin: 15px 0;
 }
 
 .main-nav-li {
-    display: inline-block;
-    margin-right: 1.2em;
+  display: inline;
+  margin-right: 1.2em;
 }
 
 .main-nav-a {
-    color: #bbb;
-    font-size: 14px;
-    text-decoration: none;
+  color: #bbb;
+  font-size: 14px;
+  text-decoration: none;
 }
 
 .main-nav-a:hover {
-    color: #000;
+  color: #000;
 }
 
 .header-nav-icons {
-  
+  padding-right: 5px;
 }
 
 .search-icon {
@@ -124,46 +135,65 @@ header {
   width: 100%;
   background-color: #fd3;
   padding: 0 10px;
+  margin-top: 32px;
   font-size: 0.9em;
 }
 
 .main-article-logo {
-    width: 40%;
-    position: relative;
-    top: 0;
-    left: 0;
-    margin-left: 15px;
-    margin-top: 20px;
+  width: 40%;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-left: 15px;
+  margin-top: 20px;
 }
 
 .main-articles-container {
-    height: 880px;
-    width: 95%;
-    grid-template: 
+  display: none;
+  height: 880px;
+  width: 95%;
+  grid-template:
     "main-article-1 main-article-2"
     "main-article-1 main-article-3";
 }
 
 .main-article-1 {
-    background-image:
-    linear-gradient(
-        337deg,
-        rgba(116, 116, 116, 0) 33%,
-        rgba(255, 0, 0, 0.4158614129245448) 56%,
-        rgba(255, 93, 93, 0.530707351299895) 84%
-      ),
-      linear-gradient(transparent, rgb(0, 0, 0)), url("/img/pic1.png"),
-      url("../img/pic1.png");
+  background-image: linear-gradient(
+      337deg,
+      rgba(116, 116, 116, 0) 33%,
+      rgba(255, 0, 0, 0.4158614129245448) 56%,
+      rgba(255, 93, 93, 0.530707351299895) 84%
+    ),
+    linear-gradient(transparent, rgb(0, 0, 0)), url("/img/pic1.png"),
+    url("../img/pic1.png");
 }
 
 /* Styles for Mobile Screen */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
+  header {
+    width: 90px;
+    margin-left: auto;
+  }
+
   .header-top-bar {
     display: none;
   }
 
+  .main-navigation {
+    display: none;
+  }
+
+  .logo {
+    height: 48px;
+  }
+
+  .hamb-icon {
+    display: inline-flex;
+  }
+
   .yellow-news {
     height: 60px;
+    margin-top: 0px;
     padding: 0 5px;
     overflow: hidden;
     white-space: nowrap;
@@ -174,21 +204,48 @@ header {
   }
 
   .main-articles-container {
-      columns: 1fr;
+    columns: 1fr;
   }
 
   .main-article {
     height: 265px;
     width: 95%;
+  }
 }
 
 /* Styles for Tablet Screen */
-@media screen and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* .logo {
+    display: inline-flex;
+  } */
+  .hamb-icon {
+    display: none;
+  }
 
+  header {
+    margin-left: auto;
+    width: calc(100% - 106px);
+  }
+
+  .main-nav-a {
+    font-size: 12px;
+  }
+
+  .header-top-bar {
+    font-size: 10px;
+  }
 }
 
-/* Styles for Mobile Screen */
-@media screen and (min-width: 1024px) {
+/* Styles for Desktop Screen */
+@media (min-width: 1024px) {
+  .logo {
+    display: none;
+  }
+
+  .hamb-icon {
+    display: none;
+  }
+
   .header-top-bar {
     background-color: #000;
     width: 100%;
