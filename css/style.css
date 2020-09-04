@@ -142,7 +142,6 @@ header {
   height: 30px;
   width: 100%;
   background-color: #fd3;
-  padding: 0 10px;
   margin-top: 32px;
   font-size: 0.9em;
 }
@@ -385,6 +384,11 @@ header {
 footer {
   height: 257px;
   background-color: #000;
+  margin-top: 20px;
+}
+
+.social-icons {
+  padding-top: 25px;
 }
 
 .footer-social-li {
@@ -392,7 +396,7 @@ footer {
   margin: 0 8px;
   width: 40px;
   height: 40px;
-  background-color: grey;
+  background-color: #272727;
   border-radius: 20px;
   cursor: pointer;
 }
@@ -408,6 +412,13 @@ footer {
   display: inline-block;
   margin: 0 4px;
   font-size: 12px;
+}
+
+.footer-copyright {
+  width: 65%;
+  padding-top: 50px;
+  font-size: 14px;
+  margin: auto;
 }
 
 /* MOBILE - Styles for Mobile Screen */
@@ -436,7 +447,6 @@ footer {
   .yellow-news {
     height: 60px;
     margin-top: 0px;
-    padding: 0 5px;
     overflow: hidden;
     white-space: nowrap;
   }
