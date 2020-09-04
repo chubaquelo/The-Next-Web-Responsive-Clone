@@ -194,18 +194,18 @@ header {
       rgba(255, 0, 0, 0.4158614129245448) 56%,
       rgba(255, 93, 93, 0.530707351299895) 84%
     ),
-    linear-gradient(transparent, rgb(0, 0, 0)), url("img/pic1.png");
+    linear-gradient(transparent, rgb(0, 0, 0)), url("../img/pic1.png");
   grid-row: 1 / 3;
 }
 
 .main-article-2 {
   background-image: linear-gradient(transparent, rgb(0, 0, 0)),
-    url("img/boris-chair-gq-796x417.png");
+    url("../img/boris-chair-gq-796x417.png");
 }
 
 .main-article-3 {
   background-image: linear-gradient(transparent, rgb(0, 0, 0)),
-    url("img/violet.jpg");
+    url("../img/violet.jpg");
 }
 
 /* Latest news section styles */
