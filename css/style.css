@@ -235,6 +235,21 @@ header {
   .yellow-news p {
     margin: auto;
   }
+  .main-articles-container {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .main-article-logo {
+    display: none;
+  }
+
+  .main-article h1,
+  .main-article h2 {
+    color: #fff;
+    font-size: 1.4em;
+    margin: 0;
+  }
 }
 
 /* Styles for Tablet Screen */
