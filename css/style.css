@@ -381,6 +381,35 @@ header {
   object-fit: cover;
 }
 
+/* Footer Style*/
+footer {
+  height: 257px;
+  background-color: #000;
+}
+
+.footer-social-li {
+  display: inline-block;
+  margin: 0 8px;
+  width: 40px;
+  height: 40px;
+  background-color: grey;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.social-icon {
+  color: #fff;
+  position: relative;
+  left: 9px;
+  top: 9px;
+}
+
+.footer-nav-li {
+  display: inline-block;
+  margin: 0 4px;
+  font-size: 12px;
+}
+
 /* MOBILE - Styles for Mobile Screen */
 @media (max-width: 768px) {
   header {
