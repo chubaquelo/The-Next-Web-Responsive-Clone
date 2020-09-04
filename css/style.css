@@ -318,7 +318,7 @@ header {
   max-height: 276px;
   align-items: flex-start;
   background: linear-gradient(transparent, rgb(0, 0, 0)),
-    url(/img/by-cat-article.jpg);
+    url(../img/by-cat-article.jpg);
   padding: 150px 15px 5px 15px;
 }
 
