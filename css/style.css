@@ -203,8 +203,9 @@ header {
 .main-article-2 {
   background-image:
     linear-gradient(
-      transparent, 
-      rgb(0, 0, 0)),
+      transparent,
+      rgb(0, 0, 0)
+    ),
     url(
         "../img/boris-chair-gq-796x417.png"
       );
@@ -215,10 +216,10 @@ header {
     linear-gradient(
       transparent,
       rgb(0, 0, 0)
-      ),
-      url(
-          "../img/violet.jpg"
-      );
+    ),
+    url(
+      "../img/violet.jpg"
+    );
 }
 
 /* Latest news section styles */
@@ -334,10 +335,10 @@ header {
     linear-gradient(
       transparent,
       rgb(0, 0, 0)
-      ),
-      url(
-          ../img/by-cat-article.jpg
-      );
+    ),
+    url(
+      ../img/by-cat-article.jpg
+    );
   padding: 150px 15px 5px 15px;
 }
 
