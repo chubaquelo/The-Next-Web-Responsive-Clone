@@ -51,6 +51,10 @@ header {
   text-overflow: ellipsis;
 }
 
+.white-color {
+  color: #fff;
+}
+
 .grey-color {
   color: hsla(0, 0%, 100%, 0.6);
 }
@@ -300,9 +304,84 @@ header {
   font-size: 12px;
   padding: 15px 15px 4px 0;
   line-height: 1.5em;
+  margin-bottom: 50px;
 }
 
-/* Styles for Mobile Screen */
+/* Articles by Categories Section Styling */
+
+.articles-by-category-container {
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.cat-last-art-hero {
+  max-width: 338px;
+  max-height: 276px;
+  align-items: flex-start;
+  background: linear-gradient(transparent, rgb(0, 0, 0)),
+    url(/img/by-cat-article.jpg);
+  padding: 150px 15px 5px 15px;
+}
+
+.cat-last-art-latest {
+  height: 96px;
+  margin: 2px 7px 0 5px;
+  background-color: #fff4f2;
+}
+
+.cat-last-art-latest-p {
+  padding-top: 10px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: #f42;
+}
+
+.latest-artcle-mini-img {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  float: right;
+}
+
+.latest-article-mini-img-h4 {
+  margin: 5px 2px;
+  color: #f42;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.cat-lat-art-ul-container-ul {
+  padding-left: 25px;
+  list-style: none;
+  display: inline-block;
+  margin-left: -1em;
+}
+
+.cat-lat-art-ul-container-li {
+  color: grey;
+  font-size: 14px;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cat-lat-art-ul-container-li::before {
+  content: "\2022";
+  color: red;
+}
+
+/* Latest DEALS Section */
+
+.last-deals-container {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.deal-img {
+  width: 270px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* MOBILE - Styles for Mobile Screen */
 @media (max-width: 768px) {
   header {
     width: 90px;
@@ -372,11 +451,31 @@ header {
   .funding-rounds-rounds {
     grid-template-columns: 1fr;
   }
+
+  .articles-by-category-container {
+    grid-template-columns: 1fr;
+  }
+
+  .last-deals-container {
+    grid-template-columns: 1fr;
+  }
+
+  .last-deals-container h4 {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .deal-img {
+    width: 75px;
+    height: 75px;
+    float: left;
+    margin-right: 10px;
+  }
 }
 
 /* END of Mobile Screen Style*/
 
-/* Styles for Tablet Screen */
+/* TABLET - Styles for Tablet Screen */
 @media (min-width: 768px) and (max-width: 1024px) {
   /* .logo {
     display: inline-flex;
@@ -446,10 +545,17 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
   }
+
+  .articles-by-category-container {
+    grid-template-columns: 1fr;
+  }
+  .last-deals-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 /* END of Tablet Screen Style */
-/* Styles for Desktop Screen */
+/* DESKTOP - Styles for Desktop Screen */
 
 @media (min-width: 1024px) {
   .logo {
