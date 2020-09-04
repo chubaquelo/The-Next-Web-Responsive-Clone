@@ -55,6 +55,10 @@ header {
   color: hsla(0, 0%, 100%, 0.6);
 }
 
+.grey2-color {
+  color: #7e7e7e;
+}
+
 /* DEFINED CLASSES */
 
 .header-top-bar {
@@ -244,6 +248,60 @@ header {
   object-fit: cover;
 }
 
+/* Funding rounds style */
+
+.funding-rounds-rounds {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.funding-rounds-navlinks-li {
+  display: inline;
+  padding: 0 5px;
+  color: #f42;
+}
+
+.funding-rounds-navlinks-li:hover {
+  color: #000;
+}
+
+.funding-rounds-navlinks-li:not(:last-child) {
+  border-right: 1px solid #f42;
+}
+
+.single-round-title {
+  font-weight: 700;
+  color: #fff;
+  background-color: #f42;
+  padding: 12px 12px 12px 85px;
+}
+
+.single-round-img {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  float: left;
+}
+
+.single-round-capital {
+  height: 46px;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 5px 0 0 85px;
+  background: rgba(255, 68, 34, 0.08);
+}
+
+.single-round-features {
+  border-bottom: 1px solid #f42;
+  padding: 5px 0;
+}
+
+.single-round-description {
+  font-size: 12px;
+  padding: 15px 15px 4px 0;
+  line-height: 1.5em;
+}
+
 /* Styles for Mobile Screen */
 @media (max-width: 768px) {
   header {
@@ -293,7 +351,30 @@ header {
     font-size: 1.4em;
     margin: 0;
   }
+
+  .latest-news-container {
+    margin: auto auto;
+    padding: 0 20px;
+  }
+
+  .latest-news-news {
+    grid-template-columns: 1fr;
+  }
+
+  .news-img {
+    height: 75px;
+    width: 75px;
+    object-fit: cover;
+    float: left;
+    margin-right: 15px;
+  }
+
+  .funding-rounds-rounds {
+    grid-template-columns: 1fr;
+  }
 }
+
+/* END of Mobile Screen Style*/
 
 /* Styles for Tablet Screen */
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -352,13 +433,24 @@ header {
     padding: 0 20px;
   }
 
+  .latest-news-title {
+    margin-top: 75px;
+  }
+
   .latest-news-news {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
   }
+
+  .funding-rounds-rounds {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
 }
 
+/* END of Tablet Screen Style */
 /* Styles for Desktop Screen */
+
 @media (min-width: 1024px) {
   .logo {
     display: none;
@@ -373,8 +465,4 @@ header {
     width: 100%;
     height: 32px;
   }
-
-  /* .main-article-1 {
-      
-  } */
 }
