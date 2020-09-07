@@ -335,6 +335,7 @@ header {
 }
 
 .cat-last-art-latest {
+  width: 99%;
   height: 96px;
   margin: 2px 7px 0 5px;
   background-color: #fff4f2;
@@ -506,6 +507,14 @@ footer {
     gap: 2px;
   }
 
+  .funding-rounds-navlinks-li {
+    display: block;
+  }
+
+  .funding-rounds-navlinks-li:not(:last-child) {
+    border: none;
+  }
+
   .last-deals-container {
     grid-template-columns: 1fr;
   }
@@ -599,8 +608,8 @@ footer {
   }
 
   .articles-by-category-container {
-    grid-template-columns: 1fr;
-    gap: 2px;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
   }
 
   .cat-last-art-hero {
@@ -622,6 +631,15 @@ footer {
   .funding-rounds-title-container {
     flex-flow: column;
   }
+
+  .funding-rounds-navlinks-li {
+    display: block;
+  }
+
+  .funding-rounds-navlinks-li:not(:last-child) {
+    border: none;
+  }
+
 }
 
 /* END of Tablet Screen Style */
