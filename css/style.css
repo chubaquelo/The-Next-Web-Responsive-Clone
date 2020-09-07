@@ -539,17 +539,13 @@ footer {
 
 /* TABLET - Styles for Tablet Screen */
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* .logo {
-    display: inline-flex;
-  } */
   .hamb-icon {
     display: none;
   }
 
-  /* header {
-    margin-left: auto;
-    width: calc(100% - 106px);
-  } */
+  .main-navigation {
+    padding-left: 12%;
+  }
 
   .main-nav-a {
     font-size: 12px;
@@ -557,6 +553,7 @@ footer {
 
   .header-top-bar {
     font-size: 10px;
+    padding-left: 12%;
   }
 
   .main-articles-container {
