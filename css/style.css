@@ -343,7 +343,7 @@ header {
   max-width: 96%;
   align-items: flex-start;
   background:
-   linear-gradient(
+    linear-gradient(
       transparent,
       rgb(0, 0, 0)
     ),
