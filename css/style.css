@@ -15,6 +15,7 @@ header {
 }
 
 /* GLOBAL CLASSES */
+
 .d-grid {
   display: grid;
 }
@@ -393,6 +394,7 @@ header {
 }
 
 /* Footer Style */
+
 footer {
   height: 257px;
   background-color: #000;
@@ -434,6 +436,7 @@ footer {
 }
 
 /* MOBILE - Styles for Mobile Screen */
+
 @media (max-width: 768px) {
   header {
     height: 80px;
@@ -539,6 +542,7 @@ footer {
 /* END of Mobile Screen Style */
 
 /* TABLET - Styles for Tablet Screen */
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .hamb-icon {
     display: none;
