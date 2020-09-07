@@ -270,9 +270,17 @@ header {
 
 /* Funding rounds style */
 
+.funding-rounds-title-container {
+  margin-top: 25px;
+}
+
 .funding-rounds-rounds {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 25px;
+}
+
+.funding-rounds-navlinks {
+  align-items: center;
 }
 
 .funding-rounds-navlinks-li {
@@ -331,7 +339,6 @@ header {
 }
 
 .cat-last-art-hero {
-  max-width: 338px;
   max-height: 276px;
   align-items: flex-start;
   background:
@@ -342,6 +349,7 @@ header {
     url(
       ../img/by-cat-article.jpg
     );
+  background-size: cover;
   padding: 150px 15px 5px 15px;
 }
 
@@ -532,6 +540,10 @@ footer {
     float: left;
     margin-right: 10px;
   }
+
+  .funding-rounds-title-container {
+    flex-flow: column;
+  }
 }
 
 /* END of Mobile Screen Style */
@@ -595,9 +607,9 @@ footer {
     padding: 0 20px;
   }
 
-  .latest-news-title {
+  /* .latest-news-title {
     margin-top: 75px;
-  }
+  } */
 
   .latest-news-news {
     grid-template-columns: 1fr 1fr 1fr;
