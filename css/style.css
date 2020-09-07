@@ -510,6 +510,7 @@ footer {
   .main-articles-container {
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
+    margin: 10px 5px;
   }
 
   .main-article-logo {
