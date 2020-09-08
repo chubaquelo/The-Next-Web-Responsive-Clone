@@ -344,6 +344,7 @@ header {
 }
 
 .cat-last-art-hero {
+  box-sizing: border-box;
   max-height: 276px;
   max-width: 100%;
   align-items: flex-start;
@@ -476,7 +477,7 @@ footer {
 
 /* MOBILE - Styles for Mobile Screen */
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   header {
     height: 80px;
   }
